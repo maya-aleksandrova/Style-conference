@@ -1,0 +1,108 @@
+@import 'var.less';
+
+.speakers-section-blog{
+    text-align: center;
+    background-color: #fff;
+    padding: 66px 0 44px 0;
+
+    &-wrapper{
+        padding: 0 44px;
+
+        @media only screen and (min-width: @mobile){
+            max-width: 990px;
+            margin: 0 auto;
+        }
+        
+    }
+
+    &-inner{
+        margin-bottom: 44px;
+
+        @media only screen and (min-width: @mobile){
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 44px auto;
+            text-align: left;
+        }
+
+    }
+
+    .container{
+        margin-bottom: 20px;
+        padding: 0 15px;
+        display: inline-block;
+
+        @media only screen and (min-width: @mobile){
+            flex-grow: 1;
+            margin-top: 40px;
+            margin-bottom: 0;
+            padding-right: 0;
+        }
+
+        &-info{
+            border: 1px solid #dfe2e5;
+            border-radius: 5px;
+            margin-top: 45px;
+            padding: 20px 60px 10px 60px;
+            text-align: center;
+
+            img{
+                border-radius: 50%;
+                height: 130px;
+                margin: -66px 0 22px 0;
+                vertical-align: top;
+            }
+
+            ul{
+                list-style: none;
+                padding-left: 0;
+
+                li{
+                   a{
+                       color: #648880;
+                   }
+                }
+            }
+        }
+    }
+
+    &-item{
+        padding: 0 44px;
+
+        @media only screen and (min-width: @mobile){
+            order: -1;
+            flex-basis: 70%;
+            padding-left: 0;
+        }
+
+        h2{
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+
+        h5{
+            margin-top: 12px;
+            margin-bottom: 22px;
+            color: #a9b2b9;
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+
+            @media only screen and (min-width: @mobile){
+                font-size: 14px;
+            }
+        }
+
+        p{
+            margin-top: 0;
+            margin-bottom: 22px;
+            color: @color-silver;
+            font-size: 16px;
+
+            a{
+                border-bottom: 1px solid #dfe2e5;
+                color: #648880;
+            }
+        }
+    }
+}

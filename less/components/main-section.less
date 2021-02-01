@@ -1,0 +1,46 @@
+@import 'var.less';
+
+.main-section{
+    text-align: center;
+    padding: 22px 80px 66px 80px;
+
+    @media only screen and (min-width: @mobile){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 990px;
+        margin: 0 auto;
+    }
+
+    &-title{
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        color: #648880;
+        line-height: 44px;
+
+        @media only screen and (min-width: @mobile){
+            font-size: 36px;
+            margin-top: 30px;
+            
+        }
+    }
+
+    &-desc{
+        margin-top: 0;
+        margin-bottom: 22px;
+        font-size: 18px;
+        font-weight: 100;
+        color: #fff;
+        line-height: 30px;
+
+        @media only screen and (min-width: @mobile){
+            font-size: 24px;
+            margin-bottom: 22px;
+            line-height: 44px;
+
+        }
+    }
+}
+

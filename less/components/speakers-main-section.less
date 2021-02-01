@@ -1,0 +1,48 @@
+@import 'var.less';
+@import 'common.less';
+
+.speakers-main-section{
+    background-image: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    text-align: center;
+    margin-top: 30px;
+    padding: 44px 0 22px 0;
+
+    &-inner{
+        padding: 0 30px;
+
+        @media only screen and (min-width: @mobile){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 990px;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        h2{
+            margin-top: 0;
+            margin-bottom: 22px;
+            font-size: 30px;
+            font-weight: normal;
+            color: #648880;
+            line-height: 44px;
+    
+            @media only screen and (min-width: @mobile){
+                font-size: 36px;
+                
+            }
+        }
+
+        p{
+            margin: 0 0 22px 0;
+            font-size: 18px;
+            line-height: 33px;
+            color: @color-silver;
+
+            @media only screen and (min-width: @mobile){
+                font-size: 21px;
+            }
+        }
+    }
+}

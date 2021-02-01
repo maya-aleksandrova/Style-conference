@@ -1,0 +1,49 @@
+@import "var.less";
+
+.btn{
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5px;
+    margin: 0;
+    text-transform: uppercase;
+
+    &:hover{
+        background-color: #fff;
+    }
+
+    &-sm{
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    &-xs{
+        padding: 12px 8px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    &-lg{
+        border: 1px solid #fff;
+        padding: 10px 15px;
+        font-size: 12px;
+
+        @media only screen and (min-width: @mobile){
+            padding: 22px 30px;
+            font-size: 16px;
+        }
+    }
+
+    &-white{
+        color: #fff;
+        text-decoration: none;
+
+        &:hover{
+            color: #648880;
+        }  
+    }
+}
